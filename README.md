@@ -20,6 +20,7 @@ Doc 3 new approach treatment schizophrenia
 Doc 4 new hopes schizophrenia patients schizophrenia cure
 
 Terms will be stored in an array. For each term, there is a list that contains document ID, and term frequency. See the following figure for the structure of the index. The word drug is present in Doc1 and Doc2 two times in each document.
+
 ![img1](https://user-images.githubusercontent.com/82761065/215339545-c8e9c749-2b4d-444e-9b36-05c53609c51d.png)
 
 # Algorithm
@@ -38,6 +39,7 @@ is more than one word in the query, take the union of all the lists.
 5. Rank the retrieved documents.
 
 Ranking Rules:
+
 Rule1: Documents containing more query terms must be ranked higher than the documents containing lesser query terms.
 
 Rule2: If two documents have the same number of query terms then rank the document higher that has higher collective term frequency.
