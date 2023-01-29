@@ -39,10 +39,12 @@ is more than one word in the query, take the union of all the lists.
 
 Ranking Rules:
 Rule1: Documents containing more query terms must be ranked higher than the documents containing lesser query terms.
+
 Rule2: If two documents have the same number of query terms then rank the document higher that has higher collective term frequency.
+
 Rule3: If two documents have the same number of query terms and the same collective term frequency then rank the document alphabetically by Doc ID
 
-#Other Functionalities:
+# Other Functionalities:
 Search_Documents: 
 Given the query word(s), tokenize them by white space, compute the list of documents related to query and output a ranked list of related documents as explained in Algorithm2 and Table1.
 
